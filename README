@@ -1,6 +1,35 @@
 libUISuggestingPeoplePicker is a library for iPhone development. You can include it in your own project to present a view using which your user can add multiple phones by editing with numberpad or picking them from contacts, just like the built-in SMS app in iPhone.
 The project is published under 'New BSD License'.
 
-How To Use:
-1. Include libUISuggestingPeoplePicker.a into your project.
-2. 
+User Guide (With XCode 4):
+
+1 Setup
+
+1.1 Refer UISuggestingPeoplePicker project in your project.
+Click the menu item 'File' > 'Add Files To "(Your project name)"...'.
+Select the file 'UISuggestingPeoplePicker.xcodeproj' (it has a blue icon) in the UISuggestingPeoplePicker project folder and click 'Add'.
+Your project navigator would look like below:
+
++YourProject
+ -UISuggestingPeoplePicker.xcodeproj
+  +...
+  -Products
+   libUISuggestingPeoplePicker.a (the file name would be red)
+ +...
+
+Also, you sould see a new scheme for UISuggestingPeoplePicker in your project (just at the right of the 'Run' and 'Stop' buttons).
+
+1.2 Link the header files and binary files of UISuggestingPeoplePicker to your project.
+Click your project name in the project navigator to view your project settings.
+Select tab 'All' under 'Build Settings'.
+Add a value '-l UISuggestingPeoplePicker' to item 'Other Linker Flags' under section 'Linking'.
+Add a value '/Users/foobar/Downloads/UISuggestingPeoplePicker/Headers' to item 'Header Search Paths' under section 'Search Paths'.
+('/Users/foobar/Downloads/UISuggestingPeoplePicker' is the path where you put project folder of UISuggestingPeoplePicker into.)
+
+1.3 Test if everything is ready.
+Choose a scheme for UISuggestingPeoplePicker and click 'Run'. If built successfully, the red named file 'libUISuggestingPeoplePicker.a' would become black.
+
+2 Usage
+
+2.1
+
