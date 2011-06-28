@@ -46,6 +46,8 @@
         NSString *phoneNumber = (NSString *)[phoneNumbers objectAtIndex:0];
         [core addContact:[self getName:person] withPhoneNumber:phoneNumber];
         [peoplePicker dismissModalViewControllerAnimated:YES];
+        // returning true makes the response slow.
+        return false;
     }
 	return true;
 }
@@ -54,7 +56,6 @@
 	  shouldContinueAfterSelectingPerson:(ABRecordRef)person 
 								property:(ABPropertyID)property 
 							  identifier:(ABMultiValueIdentifier)identifier {
-	
 	CFTypeRef multiValue = ABRecordCopyValue(person, property);
 	CFIndex valueIdx = ABMultiValueGetIndexForIdentifier(multiValue,identifier);
 	NSString *phoneNumber = (NSString *)ABMultiValueCopyValueAtIndex(multiValue, valueIdx);
