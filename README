@@ -44,6 +44,9 @@ Choose a scheme named 'UISuggestingPeoplePicker | iOS Device (or Simulator)' and
 2 Usage
 
 Import UISuggestingPeoplePicker.h into your UIViewController.
+
+> #import "UISuggestingPeoplePicker.h"
+
 Create a instance of UISuggestingPeoplePicker in where you initialize the view (i.e. Inside method 'viewDidLoad'):
 
 > UISuggestingPeoplePicker *picker = [[UISuggestingPeoplePicker alloc] initWithY:0.0f andHeight:175.0f byController:self];
