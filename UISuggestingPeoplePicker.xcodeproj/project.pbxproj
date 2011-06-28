@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		697F6EFD13B9A22200622B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697F6EFC13B9A22200622B9E /* Foundation.framework */; };
+		697F6F0813B9A22200622B9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697F6F0713B9A22200622B9E /* UIKit.framework */; };
+		697F6F0913B9A22200622B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697F6EFC13B9A22200622B9E /* Foundation.framework */; };
+		697F6F0B13B9A22200622B9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697F6F0A13B9A22200622B9E /* CoreGraphics.framework */; };
+		697F6F0E13B9A22200622B9E /* libUISuggestingPeoplePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 697F6EF913B9A22200622B9E /* libUISuggestingPeoplePicker.a */; };
+		697F6F1413B9A22200622B9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 697F6F1213B9A22200622B9E /* InfoPlist.strings */; };
+		697F6F1713B9A22200622B9E /* UISuggestingPeoplePickerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 697F6F1613B9A22200622B9E /* UISuggestingPeoplePickerTests.h */; };
+		697F6F1913B9A22200622B9E /* UISuggestingPeoplePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 697F6F1813B9A22200622B9E /* UISuggestingPeoplePickerTests.m */; };
+		697F6F3613B9A2FD00622B9E /* UISuggestingPeoplePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 697F6F2913B9A2FD00622B9E /* UISuggestingPeoplePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		697F6F3713B9A2FD00622B9E /* ContactPickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 697F6F2B13B9A2FD00622B9E /* ContactPickerDelegate.h */; };
+		697F6F3813B9A2FD00622B9E /* ContactPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 697F6F2C13B9A2FD00622B9E /* ContactPickerDelegate.m */; };
+		697F6F3913B9A2FD00622B9E /* ContactRemovingButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 697F6F2D13B9A2FD00622B9E /* ContactRemovingButton.h */; };
+		697F6F3A13B9A2FD00622B9E /* ContactRemovingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 697F6F2E13B9A2FD00622B9E /* ContactRemovingButton.m */; };
+		697F6F3B13B9A2FD00622B9E /* PhoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 697F6F2F13B9A2FD00622B9E /* PhoneNumber.h */; };
+		697F6F3C13B9A2FD00622B9E /* PhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 697F6F3013B9A2FD00622B9E /* PhoneNumber.m */; };
+		697F6F3D13B9A2FD00622B9E /* SuggestViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 697F6F3113B9A2FD00622B9E /* SuggestViewDataSource.h */; };
+		697F6F3E13B9A2FD00622B9E /* SuggestViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 697F6F3213B9A2FD00622B9E /* SuggestViewDataSource.m */; };
+		697F6F3F13B9A2FD00622B9E /* SuggestViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 697F6F3313B9A2FD00622B9E /* SuggestViewDelegate.h */; };
+		697F6F4013B9A2FD00622B9E /* SuggestViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 697F6F3413B9A2FD00622B9E /* SuggestViewDelegate.m */; };
+		697F6F4113B9A2FD00622B9E /* UISuggestingPeoplePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 697F6F3513B9A2FD00622B9E /* UISuggestingPeoplePicker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		697F6F0C13B9A22200622B9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 697F6EF013B9A22200622B9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 697F6EF813B9A22200622B9E;
+			remoteInfo = UISuggestingPeoplePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		697F6EF913B9A22200622B9E /* libUISuggestingPeoplePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUISuggestingPeoplePicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		697F6EFC13B9A22200622B9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		697F6F0013B9A22200622B9E /* UISuggestingPeoplePicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISuggestingPeoplePicker-Prefix.pch"; sourceTree = "<group>"; };
+		697F6F0613B9A22200622B9E /* UISuggestingPeoplePickerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UISuggestingPeoplePickerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		697F6F0713B9A22200622B9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		697F6F0A13B9A22200622B9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		697F6F1113B9A22200622B9E /* UISuggestingPeoplePickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UISuggestingPeoplePickerTests-Info.plist"; sourceTree = "<group>"; };
+		697F6F1313B9A22200622B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		697F6F1513B9A22200622B9E /* UISuggestingPeoplePickerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISuggestingPeoplePickerTests-Prefix.pch"; sourceTree = "<group>"; };
+		697F6F1613B9A22200622B9E /* UISuggestingPeoplePickerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISuggestingPeoplePickerTests.h; sourceTree = "<group>"; };
+		697F6F1813B9A22200622B9E /* UISuggestingPeoplePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISuggestingPeoplePickerTests.m; sourceTree = "<group>"; };
+		697F6F2913B9A2FD00622B9E /* UISuggestingPeoplePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISuggestingPeoplePicker.h; sourceTree = "<group>"; };
+		697F6F2B13B9A2FD00622B9E /* ContactPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactPickerDelegate.h; sourceTree = "<group>"; };
+		697F6F2C13B9A2FD00622B9E /* ContactPickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactPickerDelegate.m; sourceTree = "<group>"; };
+		697F6F2D13B9A2FD00622B9E /* ContactRemovingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactRemovingButton.h; sourceTree = "<group>"; };
+		697F6F2E13B9A2FD00622B9E /* ContactRemovingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactRemovingButton.m; sourceTree = "<group>"; };
+		697F6F2F13B9A2FD00622B9E /* PhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneNumber.h; sourceTree = "<group>"; };
+		697F6F3013B9A2FD00622B9E /* PhoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNumber.m; sourceTree = "<group>"; };
+		697F6F3113B9A2FD00622B9E /* SuggestViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestViewDataSource.h; sourceTree = "<group>"; };
+		697F6F3213B9A2FD00622B9E /* SuggestViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestViewDataSource.m; sourceTree = "<group>"; };
+		697F6F3313B9A2FD00622B9E /* SuggestViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestViewDelegate.h; sourceTree = "<group>"; };
+		697F6F3413B9A2FD00622B9E /* SuggestViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestViewDelegate.m; sourceTree = "<group>"; };
+		697F6F3513B9A2FD00622B9E /* UISuggestingPeoplePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISuggestingPeoplePicker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		697F6EF613B9A22200622B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697F6EFD13B9A22200622B9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697F6F0213B9A22200622B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697F6F0813B9A22200622B9E /* UIKit.framework in Frameworks */,
+				697F6F0913B9A22200622B9E /* Foundation.framework in Frameworks */,
+				697F6F0B13B9A22200622B9E /* CoreGraphics.framework in Frameworks */,
+				697F6F0E13B9A22200622B9E /* libUISuggestingPeoplePicker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		697F6EEE13B9A22200622B9E = {
+			isa = PBXGroup;
+			children = (
+				697F6EFE13B9A22200622B9E /* UISuggestingPeoplePicker */,
+				697F6F0F13B9A22200622B9E /* UISuggestingPeoplePickerTests */,
+				697F6EFB13B9A22200622B9E /* Frameworks */,
+				697F6EFA13B9A22200622B9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		697F6EFA13B9A22200622B9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				697F6EF913B9A22200622B9E /* libUISuggestingPeoplePicker.a */,
+				697F6F0613B9A22200622B9E /* UISuggestingPeoplePickerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		697F6EFB13B9A22200622B9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				697F6EFC13B9A22200622B9E /* Foundation.framework */,
+				697F6F0713B9A22200622B9E /* UIKit.framework */,
+				697F6F0A13B9A22200622B9E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		697F6EFE13B9A22200622B9E /* UISuggestingPeoplePicker */ = {
+			isa = PBXGroup;
+			children = (
+				697F6F2813B9A2FD00622B9E /* Headers */,
+				697F6F2A13B9A2FD00622B9E /* Sources */,
+				697F6EFF13B9A22200622B9E /* Supporting Files */,
+			);
+			path = UISuggestingPeoplePicker;
+			sourceTree = "<group>";
+		};
+		697F6EFF13B9A22200622B9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				697F6F0013B9A22200622B9E /* UISuggestingPeoplePicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		697F6F0F13B9A22200622B9E /* UISuggestingPeoplePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				697F6F1613B9A22200622B9E /* UISuggestingPeoplePickerTests.h */,
+				697F6F1813B9A22200622B9E /* UISuggestingPeoplePickerTests.m */,
+				697F6F1013B9A22200622B9E /* Supporting Files */,
+			);
+			path = UISuggestingPeoplePickerTests;
+			sourceTree = "<group>";
+		};
+		697F6F1013B9A22200622B9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				697F6F1113B9A22200622B9E /* UISuggestingPeoplePickerTests-Info.plist */,
+				697F6F1213B9A22200622B9E /* InfoPlist.strings */,
+				697F6F1513B9A22200622B9E /* UISuggestingPeoplePickerTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		697F6F2813B9A2FD00622B9E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				697F6F2913B9A2FD00622B9E /* UISuggestingPeoplePicker.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		697F6F2A13B9A2FD00622B9E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				697F6F2B13B9A2FD00622B9E /* ContactPickerDelegate.h */,
+				697F6F2C13B9A2FD00622B9E /* ContactPickerDelegate.m */,
+				697F6F2D13B9A2FD00622B9E /* ContactRemovingButton.h */,
+				697F6F2E13B9A2FD00622B9E /* ContactRemovingButton.m */,
+				697F6F2F13B9A2FD00622B9E /* PhoneNumber.h */,
+				697F6F3013B9A2FD00622B9E /* PhoneNumber.m */,
+				697F6F3113B9A2FD00622B9E /* SuggestViewDataSource.h */,
+				697F6F3213B9A2FD00622B9E /* SuggestViewDataSource.m */,
+				697F6F3313B9A2FD00622B9E /* SuggestViewDelegate.h */,
+				697F6F3413B9A2FD00622B9E /* SuggestViewDelegate.m */,
+				697F6F3513B9A2FD00622B9E /* UISuggestingPeoplePicker.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		697F6EF713B9A22200622B9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697F6F3613B9A2FD00622B9E /* UISuggestingPeoplePicker.h in Headers */,
+				697F6F3713B9A2FD00622B9E /* ContactPickerDelegate.h in Headers */,
+				697F6F3913B9A2FD00622B9E /* ContactRemovingButton.h in Headers */,
+				697F6F3B13B9A2FD00622B9E /* PhoneNumber.h in Headers */,
+				697F6F3D13B9A2FD00622B9E /* SuggestViewDataSource.h in Headers */,
+				697F6F3F13B9A2FD00622B9E /* SuggestViewDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		697F6EF813B9A22200622B9E /* UISuggestingPeoplePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 697F6F1C13B9A22200622B9E /* Build configuration list for PBXNativeTarget "UISuggestingPeoplePicker" */;
+			buildPhases = (
+				697F6EF513B9A22200622B9E /* Sources */,
+				697F6EF613B9A22200622B9E /* Frameworks */,
+				697F6EF713B9A22200622B9E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UISuggestingPeoplePicker;
+			productName = UISuggestingPeoplePicker;
+			productReference = 697F6EF913B9A22200622B9E /* libUISuggestingPeoplePicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		697F6F0513B9A22200622B9E /* UISuggestingPeoplePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 697F6F1F13B9A22200622B9E /* Build configuration list for PBXNativeTarget "UISuggestingPeoplePickerTests" */;
+			buildPhases = (
+				697F6F0113B9A22200622B9E /* Sources */,
+				697F6F0213B9A22200622B9E /* Frameworks */,
+				697F6F0313B9A22200622B9E /* Resources */,
+				697F6F0413B9A22200622B9E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				697F6F0D13B9A22200622B9E /* PBXTargetDependency */,
+			);
+			name = UISuggestingPeoplePickerTests;
+			productName = UISuggestingPeoplePickerTests;
+			productReference = 697F6F0613B9A22200622B9E /* UISuggestingPeoplePickerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		697F6EF013B9A22200622B9E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 697F6EF313B9A22200622B9E /* Build configuration list for PBXProject "UISuggestingPeoplePicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 697F6EEE13B9A22200622B9E;
+			productRefGroup = 697F6EFA13B9A22200622B9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				697F6EF813B9A22200622B9E /* UISuggestingPeoplePicker */,
+				697F6F0513B9A22200622B9E /* UISuggestingPeoplePickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		697F6F0313B9A22200622B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697F6F1413B9A22200622B9E /* InfoPlist.strings in Resources */,
+				697F6F1713B9A22200622B9E /* UISuggestingPeoplePickerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		697F6F0413B9A22200622B9E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		697F6EF513B9A22200622B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697F6F3813B9A2FD00622B9E /* ContactPickerDelegate.m in Sources */,
+				697F6F3A13B9A2FD00622B9E /* ContactRemovingButton.m in Sources */,
+				697F6F3C13B9A2FD00622B9E /* PhoneNumber.m in Sources */,
+				697F6F3E13B9A2FD00622B9E /* SuggestViewDataSource.m in Sources */,
+				697F6F4013B9A2FD00622B9E /* SuggestViewDelegate.m in Sources */,
+				697F6F4113B9A2FD00622B9E /* UISuggestingPeoplePicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697F6F0113B9A22200622B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697F6F1913B9A22200622B9E /* UISuggestingPeoplePickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		697F6F0D13B9A22200622B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 697F6EF813B9A22200622B9E /* UISuggestingPeoplePicker */;
+			targetProxy = 697F6F0C13B9A22200622B9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		697F6F1213B9A22200622B9E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				697F6F1313B9A22200622B9E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		697F6F1A13B9A22200622B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		697F6F1B13B9A22200622B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		697F6F1D13B9A22200622B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/UISuggestingPeoplePicker.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UISuggestingPeoplePicker/UISuggestingPeoplePicker-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		697F6F1E13B9A22200622B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/UISuggestingPeoplePicker.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UISuggestingPeoplePicker/UISuggestingPeoplePicker-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		697F6F2013B9A22200622B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UISuggestingPeoplePickerTests/UISuggestingPeoplePickerTests-Prefix.pch";
+				INFOPLIST_FILE = "UISuggestingPeoplePickerTests/UISuggestingPeoplePickerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		697F6F2113B9A22200622B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UISuggestingPeoplePickerTests/UISuggestingPeoplePickerTests-Prefix.pch";
+				INFOPLIST_FILE = "UISuggestingPeoplePickerTests/UISuggestingPeoplePickerTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		697F6EF313B9A22200622B9E /* Build configuration list for PBXProject "UISuggestingPeoplePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697F6F1A13B9A22200622B9E /* Debug */,
+				697F6F1B13B9A22200622B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		697F6F1C13B9A22200622B9E /* Build configuration list for PBXNativeTarget "UISuggestingPeoplePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697F6F1D13B9A22200622B9E /* Debug */,
+				697F6F1E13B9A22200622B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		697F6F1F13B9A22200622B9E /* Build configuration list for PBXNativeTarget "UISuggestingPeoplePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697F6F2013B9A22200622B9E /* Debug */,
+				697F6F2113B9A22200622B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 697F6EF013B9A22200622B9E /* Project object */;
+}

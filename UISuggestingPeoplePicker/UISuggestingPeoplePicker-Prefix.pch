@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'UISuggestingPeoplePicker' target in the 'UISuggestingPeoplePicker' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
