@@ -39,9 +39,50 @@ AddressBookUI.framework
 You should import them by clicking your project name in the project navigator and choosing 'Build Phases' > 'Link Binary With Libraries'.
 
 1.4 Test if everything is ready.
-Choose a scheme named 'UISuggestingPeoplePicker | IOS Device (or Simulator)' and click 'Run'. If built successfully, the red-named file 'libUISuggestingPeoplePicker.a' would become black.
+Choose a scheme named 'UISuggestingPeoplePicker | iOS Device (or Simulator)' and click 'Run'. If built successfully, the red-named file 'libUISuggestingPeoplePicker.a' would become black.
 
 2 Usage
 
-2.1
+Import UISuggestingPeoplePicker.h into your UIViewController.
+Create a instance of UISuggestingPeoplePicker in where you initialize the view (i.e. Inside method 'viewDidLoad'):
 
+> UISuggestingPeoplePicker *picker = [[UISuggestingPeoplePicker alloc] initWithY:0.0f andHeight:175.0f byController:self];
+
+If you want to decorate the cells containing suggested people with some UIView, you should define a class implementing the protocol SuggestedPersonDecorator:
+
+> @interface YourDecorator : SuperClass <SuggestedPersonDecorator> {
+>     ...
+> }
+
+> @implementation YourDecorator
+> 
+> - (UIView *)subviewToDecorate:(NSString *)phone {
+>     if ([phone hasPrefix:@"+852"]) {
+>         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(200, 10, 50, 20)];
+>         [label setText:@"HK"];
+>         return label;
+>     }
+>     return nil;
+> }
+> 
+> @end
+
+And set the instace of it to the picker:
+
+> [picker setSuggestedPersonDecorator:theDecorator];
+
+Call the method 'display' of the instance of UISuggestingPeoplePicker in method 'viewWillAppear:' of your controller:
+
+> [picker display];
+
+Call the method 'fulfillSelected:' in where you want to check the phone numbers the user selected:
+
+> NSMutableArray *selectedPhones = [NSMutableArray arrayWithCapacity:0];
+> [picker fulfillSelected:selectedPhones];
+> NSLog(@"Selected phones: %@", selectedPhones);
+
+Call the method 'clear' in where you want to clear or dismiss the view:
+
+> [picker clear];
+
+That's all!
