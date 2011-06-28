@@ -33,12 +33,12 @@
 #import "PickerCoreView.h"
 
 @implementation UISuggestingPeoplePicker
-@synthesize dataSource;
+@synthesize suggestedPersonDecorator;
 
 - (void)dealloc
 {
     // ???
-    [dataSource release];
+    [suggestedPersonDecorator release];
     [core release];
     [super dealloc];
 }

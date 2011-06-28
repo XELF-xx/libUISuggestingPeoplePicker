@@ -31,9 +31,9 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol UISuggestingPeoplePickerDataSource <NSObject>
+@protocol SuggestedPersonDecorator <NSObject>
 
-- (UIView *)subviewForSuggestedPerson:(NSString *)phone;
+- (UIView *)subviewToDecorate:(NSString *)phone;
 
 @end
 
@@ -41,10 +41,10 @@
 
 @interface UISuggestingPeoplePicker : UIView {
     PickerCoreView *core;
-    id <UISuggestingPeoplePickerDataSource> dataSource;
+    id <SuggestedPersonDecorator> suggestedPersonDecorator;
 }
 
-@property (nonatomic, retain) id <UISuggestingPeoplePickerDataSource> dataSource;
+@property (nonatomic, retain) id <SuggestedPersonDecorator> suggestedPersonDecorator;
 
 - (id)initWithY:(CGFloat)y andHeight:(CGFloat)height byController:(UIViewController *)controller;
 

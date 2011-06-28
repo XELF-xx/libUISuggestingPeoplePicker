@@ -80,8 +80,8 @@
     [phoneLabel setTextColor:[UIColor lightGrayColor]];
     [cell addSubview:phoneLabel];
     [phoneLabel release];
-    if ([[self picker] dataSource] != nil) {
-        UIView *subview = [[[self picker] dataSource] subviewForSuggestedPerson:[phoneNumber phone]];
+    if ([[self picker] suggestedPersonDecorator] != nil) {
+        UIView *subview = [[[self picker] suggestedPersonDecorator] subviewToDecorate:[phoneNumber phone]];
         if (subview != nil) {
             [subview setTag:666];
             [cell addSubview:subview];
