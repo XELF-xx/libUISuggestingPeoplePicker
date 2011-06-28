@@ -22,11 +22,10 @@ Also, you sould see a new scheme for UISuggestingPeoplePicker in your project (j
 1.2 Link the header files and binary files of UISuggestingPeoplePicker to your project.
 Click your project name in the project navigator to view your project settings.
 Select tab 'All' under 'Build Settings'.
-Add a value '-l UISuggestingPeoplePicker' to item 'Other Linker Flags' under section 'Linking'.
 Add a value '/Users/foobar/Downloads/UISuggestingPeoplePicker/Headers' to item 'Header Search Paths' under section 'Search Paths'.
 ('/Users/foobar/Downloads/UISuggestingPeoplePicker' is the path where you put project folder of UISuggestingPeoplePicker into.)
 
-1.3 Add required framework into your project.
+1.3 Add required frameworks and libraries into your project.
 UISuggestingPeoplePicker needs 6 frameworks to work:
 
 UIKit.framework
@@ -37,6 +36,7 @@ AddressBook.framework
 AddressBookUI.framework
 
 You should import them by clicking your project name in the project navigator and choosing 'Build Phases' > 'Link Binary With Libraries'.
+Also, don't forget to add libUISuggestingPeoplePicker.a from your workspace.
 
 1.4 Test if everything is ready.
 Choose a scheme named 'UISuggestingPeoplePicker | iOS Device (or Simulator)' and click 'Run'. If built successfully, the red-named file 'libUISuggestingPeoplePicker.a' would become black.
