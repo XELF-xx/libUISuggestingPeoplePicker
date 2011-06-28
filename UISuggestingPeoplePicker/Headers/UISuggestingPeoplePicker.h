@@ -31,8 +31,19 @@
 
 #import <UIKit/UIKit.h>
 
+/*
+ * If you want to decorate each table cell containing suggested person with a sub view,
+ * you will need to define a class implementing this protocol,
+ * then create an instance of it and set it into the picker instance using [setSuggestedPersonDecorator:].
+ */
 @protocol SuggestedPersonDecorator <NSObject>
 
+/*
+ * Return:
+ * (UIView *) A view to be embeded into the table cell containing the phone number.
+ * Parameters:
+ *   phone (NSString *) The phone number contained in the table cell.
+ */
 - (UIView *)subviewToDecorate:(NSString *)phone;
 
 @end
