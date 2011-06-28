@@ -32,14 +32,13 @@
 #import <Foundation/Foundation.h>
 #import <AddressBookUI/ABPeoplePickerNavigationController.h>
 
-@class UISuggestingPeoplePicker;
-
+@class PickerCoreView;
 
 @interface ContactPickerDelegate : NSObject <ABPeoplePickerNavigationControllerDelegate> {
-    UISuggestingPeoplePicker *suggestingPeoplePicker;
+    PickerCoreView *core;
 }
 
-@property(nonatomic, retain) UISuggestingPeoplePicker* suggestingPeoplePicker;
+@property(nonatomic, retain) PickerCoreView* core;
 
 - (NSString *) getName: (ABRecordRef) person;
 

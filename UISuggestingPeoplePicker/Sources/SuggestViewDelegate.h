@@ -32,14 +32,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@class UISuggestingPeoplePicker;
+@class PickerCoreView;
 
 @interface SuggestViewDelegate : NSObject <UITableViewDelegate> {
-    UISuggestingPeoplePicker *suggestingPeoplePicker;
+    PickerCoreView *core;
 }
 
-@property(nonatomic, retain) UISuggestingPeoplePicker* suggestingPeoplePicker;
+@property(nonatomic, retain) PickerCoreView* core;
 
-- (SuggestViewDelegate *) initWithSuggestingPeoplePicker:(UISuggestingPeoplePicker *)theSuggestingPeoplePicker;
+- (SuggestViewDelegate *) initWithCoreView:(PickerCoreView *)theCore;
 
 @end

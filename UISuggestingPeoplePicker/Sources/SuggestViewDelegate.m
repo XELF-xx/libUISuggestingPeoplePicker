@@ -30,14 +30,14 @@
 //
 
 #import "SuggestViewDelegate.h"
-#import "UISuggestingPeoplePicker.h"
+#import "PickerCoreView.h"
 
 @implementation SuggestViewDelegate
-@synthesize suggestingPeoplePicker;
+@synthesize core;
 
-- (SuggestViewDelegate *) initWithSuggestingPeoplePicker:(UISuggestingPeoplePicker *)theSuggestingPeoplePicker {
+- (SuggestViewDelegate *) initWithCoreView:(PickerCoreView *)theCore {
     self = [super init];
-    [self setSuggestingPeoplePicker:theSuggestingPeoplePicker];
+    [self setCore:theCore];
     return self;
 }
 
@@ -52,14 +52,14 @@
             phone = [((UILabel *) subview) text];
         }
     }
-    [suggestingPeoplePicker addContact:nick withPhoneNumber:phone];
-    [[suggestingPeoplePicker textField] setText:@""];
+    [core addContact:nick withPhoneNumber:phone];
+    [[core textField] setText:@""];
     return nil;
 }
 
 - (void)dealloc
 {
-    [suggestingPeoplePicker release];
+    [core release];
     [super dealloc];
 }
 

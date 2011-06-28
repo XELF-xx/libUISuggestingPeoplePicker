@@ -1,5 +1,5 @@
 //
-//  UISuggestingPeoplePicker.h
+//  PickerCoreView.h
 //  UISuggestingPeoplePicker
 //
 //  Created by Evan Wu on 11-6-10.
@@ -31,22 +31,43 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol UISuggestingPeoplePickerDataSource <NSObject>
+@class UISuggestingPeoplePicker;
+@class UIViewController;
+@class UIScrollView;
+@class UITextField;
+@class UITableView;
+@class ABPeoplePickerNavigationController;
+@class ContactRemovingButton;
+@class SuggestViewDataSource;
+@class CAGradientLayer;
 
-- (UIView *)subviewForSuggestedPerson:(NSString *)phone;
-
-@end
-
-@class PickerCoreView;
-
-@interface UISuggestingPeoplePicker : UIView {
-    PickerCoreView *core;
-    id <UISuggestingPeoplePickerDataSource> dataSource;
+@interface PickerCoreView : NSObject <UITextFieldDelegate> {
+    UISuggestingPeoplePicker *picker;
+    UIViewController *viewController;
+    UIScrollView *scrollView;
+    NSMutableArray *contactRemovingButtons;
+    UITextField *textField;
+    ABPeoplePickerNavigationController *contactPickerController;
+    UITableView *suggestView;
+    SuggestViewDataSource *suggestViewDataSource;
+    CAGradientLayer *tableShadow;
 }
 
-@property (nonatomic, retain) id <UISuggestingPeoplePickerDataSource> dataSource;
+@property (nonatomic, retain) UISuggestingPeoplePicker *picker;
+@property (nonatomic, retain) UIViewController *viewController;
+@property (nonatomic, retain) UIScrollView *scrollView;
+@property (nonatomic, retain) NSMutableArray *contactRemovingButtons;
+@property (nonatomic, retain) UITextField *textField;
+@property (nonatomic, retain) ABPeoplePickerNavigationController* contactPickerController;
+@property (nonatomic, retain) UITableView *suggestView;
+@property (nonatomic, retain) SuggestViewDataSource *suggestViewDataSource;
+@property (nonatomic, retain) CAGradientLayer *tableShadow;
 
-- (id)initWithY:(CGFloat)y andHeight:(CGFloat)height byController:(UIViewController *)controller;
+- (id)initWithPickerView:(UISuggestingPeoplePicker *)picker andController:(UIViewController *)controller;
+- (IBAction)removeContact:(id)sender;
+- (IBAction)showContacts:(id)sender;
+- (void)addContact:(NSString *)name withPhoneNumber:(NSString *)phoneNumber;
+- (Boolean)placeContactRemovingButton:(ContactRemovingButton *)contactRemovingButton;
 
 - (void)display;
 

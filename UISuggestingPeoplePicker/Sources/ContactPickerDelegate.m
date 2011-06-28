@@ -31,11 +31,11 @@
 
 #import "ContactPickerDelegate.h"
 #import <AddressBook/AddressBook.h>
-#import "UISuggestingPeoplePicker.h"
+#import "PickerCoreView.h"
 
 
 @implementation ContactPickerDelegate
-@synthesize suggestingPeoplePicker;
+@synthesize core;
 
 - (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker 
 	  shouldContinueAfterSelectingPerson:(ABRecordRef)person {
@@ -44,7 +44,7 @@
     CFRelease(phoneNumberProperty);
     if ([phoneNumbers count] == 1) {
         NSString *phoneNumber = (NSString *)[phoneNumbers objectAtIndex:0];
-        [suggestingPeoplePicker addContact:[self getName:person] withPhoneNumber:phoneNumber];
+        [core addContact:[self getName:person] withPhoneNumber:phoneNumber];
         [peoplePicker dismissModalViewControllerAnimated:YES];
     }
 	return true;
@@ -58,7 +58,7 @@
 	CFTypeRef multiValue = ABRecordCopyValue(person, property);
 	CFIndex valueIdx = ABMultiValueGetIndexForIdentifier(multiValue,identifier);
 	NSString *phoneNumber = (NSString *)ABMultiValueCopyValueAtIndex(multiValue, valueIdx);
-    [suggestingPeoplePicker addContact:[self getName:person] withPhoneNumber:phoneNumber];
+    [core addContact:[self getName:person] withPhoneNumber:phoneNumber];
     [peoplePicker dismissModalViewControllerAnimated:YES];
 	/**[[LinphoneManager instance].callDelegate displayDialerFromUI:nil 
      forUser:phoneNumber 
@@ -81,7 +81,7 @@
 
 - (void)dealloc
 {
-    [suggestingPeoplePicker release];
+    [core release];
     [super dealloc];
 }
 

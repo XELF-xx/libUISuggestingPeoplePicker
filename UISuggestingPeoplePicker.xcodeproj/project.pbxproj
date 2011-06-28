@@ -27,6 +27,8 @@
 		697F6F3F13B9A2FD00622B9E /* SuggestViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 697F6F3313B9A2FD00622B9E /* SuggestViewDelegate.h */; };
 		697F6F4013B9A2FD00622B9E /* SuggestViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 697F6F3413B9A2FD00622B9E /* SuggestViewDelegate.m */; };
 		697F6F4113B9A2FD00622B9E /* UISuggestingPeoplePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 697F6F3513B9A2FD00622B9E /* UISuggestingPeoplePicker.m */; };
+		697F6FA613B9B08E00622B9E /* PickerCoreView.h in Headers */ = {isa = PBXBuildFile; fileRef = 697F6FA413B9B08D00622B9E /* PickerCoreView.h */; };
+		697F6FA713B9B08E00622B9E /* PickerCoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 697F6FA513B9B08D00622B9E /* PickerCoreView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		697F6F3313B9A2FD00622B9E /* SuggestViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestViewDelegate.h; sourceTree = "<group>"; };
 		697F6F3413B9A2FD00622B9E /* SuggestViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestViewDelegate.m; sourceTree = "<group>"; };
 		697F6F3513B9A2FD00622B9E /* UISuggestingPeoplePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISuggestingPeoplePicker.m; sourceTree = "<group>"; };
+		697F6FA413B9B08D00622B9E /* PickerCoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerCoreView.h; sourceTree = "<group>"; };
+		697F6FA513B9B08D00622B9E /* PickerCoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerCoreView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,8 @@
 				697F6F3313B9A2FD00622B9E /* SuggestViewDelegate.h */,
 				697F6F3413B9A2FD00622B9E /* SuggestViewDelegate.m */,
 				697F6F3513B9A2FD00622B9E /* UISuggestingPeoplePicker.m */,
+				697F6FA413B9B08D00622B9E /* PickerCoreView.h */,
+				697F6FA513B9B08D00622B9E /* PickerCoreView.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 				697F6F3B13B9A2FD00622B9E /* PhoneNumber.h in Headers */,
 				697F6F3D13B9A2FD00622B9E /* SuggestViewDataSource.h in Headers */,
 				697F6F3F13B9A2FD00622B9E /* SuggestViewDelegate.h in Headers */,
+				697F6FA613B9B08E00622B9E /* PickerCoreView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +305,7 @@
 				697F6F3E13B9A2FD00622B9E /* SuggestViewDataSource.m in Sources */,
 				697F6F4013B9A2FD00622B9E /* SuggestViewDelegate.m in Sources */,
 				697F6F4113B9A2FD00622B9E /* UISuggestingPeoplePicker.m in Sources */,
+				697F6FA713B9B08E00622B9E /* PickerCoreView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
