@@ -40,8 +40,8 @@
 
 /*
  * Return:
- * (UIView *) A view to be embeded into the table cell containing the phone number.
- * Parameters:
+ * (UIView *) A view to be embeded into the table cell containing the phone number, or nil to do nothing.
+ * Parameter(s):
  *   phone (NSString *) The phone number contained in the table cell.
  */
 - (UIView *)subviewToDecorate:(NSString *)phone;
@@ -50,19 +50,48 @@
 
 @class PickerCoreView;
 
+/*
+ * Create an instance of this class in method 'viewDidLoad' of your UIViewController.
+ */
 @interface UISuggestingPeoplePicker : UIView {
+    /*
+     * Private member field. No needs to touch.
+     */
     PickerCoreView *core;
     id <SuggestedPersonDecorator> suggestedPersonDecorator;
 }
 
+/*
+ * The callback class instance to be called on rendering each suggested person.
+ */
 @property (nonatomic, retain) id <SuggestedPersonDecorator> suggestedPersonDecorator;
 
+/*
+ * The only initializing method.
+ * Return:
+ * (id) The initialized instance.
+ * Parameter(s):
+ *   y (CGFloat) Top position of the picker view.
+ *   height (CGFloat) Height of the picker view.
+ *   controller (UIViewController *) The controller to setup the picker view.
+ */
 - (id)initWithY:(CGFloat)y andHeight:(CGFloat)height byController:(UIViewController *)controller;
 
+/*
+ * Call this method in method 'viewWillAppear:' of your controller.
+ */
 - (void)display;
 
+/*
+ * Call this method in where you want to clear or dismiss the view.
+ */
 - (void)clear;
 
+/*
+ * Call this method in where you want to check the phone numbers the user selected.
+ * Parameter(s):
+ *   selected (NSMutableArray *) The array to be fulfilled with selected phone numbers.
+ */
 - (void)fulfillSelected:(NSMutableArray *)selected;
 
 @end
